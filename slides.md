@@ -37,6 +37,17 @@ Very powerful & efficient, though not very intuitive for beginners. Therefore, w
 
 ---
 
+
+# is git dangerous?<!-- fit -->
+
+[ __recent__ _actual_ ad on an _actual_ online newspaper ]
+
+Apparently, people can lose valuable code not only with _raw git_, but also using _git protection wrappers_ such as github.
+
+![bg right 40%](./images/githubLost.png)
+
+---
+
 # introduction
 
 This training:
