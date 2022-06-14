@@ -139,7 +139,7 @@ Patches also contain information about files.
 
 # branch
 
-The most important concept in _modern_ VCSs.
+The __most important__ concept in _modern_ VCSs.
 
 The main reason why git was created is because in svn (the mainstream VCS at the time), the branching (& merge) mechanism is poorly designed (although it was _good enough_ for that time). Merging with svn beyond very simple use cases is tough and complicated.
 
@@ -187,7 +187,7 @@ Commits without a _git branch_ are deleted / lost. Therefore:
 * ensure your valuable commits have a branch (or reference)
 * delete a branch to get rid of useless commits
 
-Reminder: git was designed to being able of removing _unused work_.
+Reminder: git was designed to be able of removing _unused work_.
 
 Downside: beginners (or not so beginners) may lose _valuable work_.
 
