@@ -95,7 +95,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="gaia" data-marpit-pagination="12" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
 <h1>what is a patch?</h1>
-<p>A patch is the substraction of 2 (text) file sets. Therefore, like files, it is composed of lines. Both <em>negative</em> (removed) and <em>positive</em> (added).</p>
+<p>A patch is the subtraction of 2 (text) file sets. Therefore, like files, it is composed of lines. Both <em>negative</em> (removed) and <em>positive</em> (added).</p>
 <p><img src="./images/diffPatch.png" alt="" style="width:980px;" /></p>
 <p>Patches also contain information about files.</p>
 </section>
@@ -116,7 +116,7 @@
 <p><img src="./images/branch_not_branching_22_rebaseKeep.png" alt="" style="width:240px;" /> Here we see 3 <em>git branches</em> and only 2 <em>bifurcations</em>.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="gaia" data-marpit-pagination="16" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
-<h1>branching without branch</h1>
+<h1>branching without branches</h1>
 <p>Branching happens as soon as a file is modified. Regardless of using git or any other VCS, or without explicitly creating branches:</p>
 <ol>
 <li>different users, <em>same branch</em></li>
@@ -192,14 +192,14 @@ int b = 3;  &lt;= ! =&gt;  int b = 4;    |  &lt;=   int b = 1;
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-marpit-fragments="4" data-paginate="true" data-theme="gaia" data-marpit-pagination="24" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
 <h1>configure the files to ignore</h1>
-<p>For each one of your repos, configure the files to ignore by editting <code>.gitignore</code> at the top of your repo. It contains entries such as:</p>
+<p>For each one of your repos, configure the files to ignore by editing <code>.gitignore</code> at the top of your repo. It contains entries such as:</p>
 <ul>
 <li data-marpit-fragment="1"><code>output.html</code> : generated files, to be kept out of git</li>
 <li data-marpit-fragment="2"><code>build/output/</code> : build folders</li>
 <li data-marpit-fragment="3"><code>*.o</code> : typical for C/C++ if no build folder</li>
 <li data-marpit-fragment="4"><code>*.swp</code> : if you use vim</li>
 </ul>
-<p>In github there are convenient ready-to-use <em>ignore templates</em>, offered when a repo is created.</p>
+<p>In github/gitlab there are convenient ready-to-use <em>ignore templates</em>, offered when a repo is created.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-theme="gaia" data-marpit-pagination="25" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
 <h1>configure the CLI git prompt</h1>
@@ -223,7 +223,7 @@ int b = 3;  &lt;= ! =&gt;  int b = 4;    |  &lt;=   int b = 1;
 <li>the parents and the children.</li>
 <li>the merge commits</li>
 </ul>
-<p>Not using the graph log view with branches is like typing with half eye instead of 2. This feature is a bit hidden in github (<em>insights</em> / <em>network</em>).</p>
+<p>Not using the graph log view with branches is like typing with half eye instead of 2. In github this feature is a bit hidden (<em>insights</em> / <em>network</em>).</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-theme="gaia" data-marpit-pagination="28" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
 <h1>GUI log</h1>
@@ -422,11 +422,11 @@ int b = 3;  &lt;= ! =&gt;  int b = 4;    |  &lt;=   int b = 1;
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-paginate="true" data-class="invert" data-theme="gaia" class="invert" data-marpit-pagination="54" data-marpit-pagination-total="124" style="--paginate:true;--class:invert;--theme:gaia;">
 <h1>best practices / tips #1</h1>
-<h1 is="marp-h1" data-auto-scaling>the stash is your friend</h1>
+<h1 is="marp-h1" data-auto-scaling>the index is your friend</h1>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-paginate="true" data-theme="gaia" data-marpit-pagination="55" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
-<h1>the stash</h1>
-<p>The <em>stash</em> (or <em>index</em>) are the changes that are marked (<em>staged</em>) for committing.</p>
+<h1>the index / staging directory</h1>
+<p>The <em>staging directory</em> (or <em>index</em>) are the changes that are marked (<em>staged</em>) for committing.</p>
 <p>This means you can <em>play</em> with which subset of your current changes you want to commit, for a nicer and more meaningful history.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-paginate="true" data-theme="gaia" data-marpit-pagination="56" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
@@ -524,7 +524,7 @@ int b = 3;  &lt;= ! =&gt;  int b = 4;    |  &lt;=   int b = 1;
 <ul>
 <li data-marpit-fragment="1">reword</li>
 <li data-marpit-fragment="2">reorder</li>
-<li data-marpit-fragment="3">join</li>
+<li data-marpit-fragment="3">join (squash / fixup)</li>
 <li data-marpit-fragment="4">split / change</li>
 </ul>
 </section>
@@ -727,9 +727,9 @@ pick a2b1c037f9 remove typo when fixing the bug
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="95" data-paginate="true" data-theme="gaia" data-marpit-pagination="95" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
 <h1>git vs github</h1>
 <p>git is not github / github is not git</p>
-<p>github is a cloud service with fancy collaboration features like the famous <em>pull request</em>, which is a merge with a review + approve process.</p>
+<p>github is a cloud service with fancy collaboration features like the famous <em>pull request</em> (called <em>merge request</em> in gitlab), which is a merge with a review + approve process.</p>
 <p>From the point of view of your local repo, in github is simply a remote repo.</p>
-<p>Note: this is not a github configuration course: keys, permissions, etc.</p>
+<p>Note: this is NOT a <em>github configuration course</em>: keys, permissions, etc.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="96" data-paginate="true" data-theme="gaia" data-marpit-pagination="96" data-marpit-pagination-total="124" style="--paginate:true;--theme:gaia;">
 <h1>set up your own 'github'</h1>
