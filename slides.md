@@ -122,7 +122,7 @@ Algebraically, a node (diff / delta / patch) is defined as:
 
 `[ contents of commit2 ]` - `[ contents of commit1 ]`
 
-`patch` and `diff` are the _conceptual base_ beneath git. They are linux commands since prehistoric times.
+`patch` and `diff` are the _conceptual base_ beneath git. They are UNIX commands since prehistoric times: https://en.wikipedia.org/wiki/Diff
 
 
 ---
@@ -139,7 +139,7 @@ Patches also contain information about files.
 
 # branch
 
-The most important concept in _modern_ VCSs.
+The __most important__ concept in _modern_ VCSs.
 
 The main reason why git was created is because in svn (the mainstream VCS at the time), the branching (& merge) mechanism is poorly designed (although it was _good enough_ for that time). Merging with svn beyond very simple use cases is tough and complicated.
 
@@ -187,7 +187,7 @@ Commits without a _git branch_ are deleted / lost. Therefore:
 * ensure your valuable commits have a branch (or reference)
 * delete a branch to get rid of useless commits
 
-Reminder: git was designed to being able of removing _unused work_.
+Reminder: git was designed to be able of removing _unused work_.
 
 Downside: beginners (or not so beginners) may lose _valuable work_.
 
@@ -749,7 +749,7 @@ tips:
 
 * with the CLI, use `git reset HEAD~` to edit the commit contents
 * when rebasing many commits, don't do them all at once (simplify)
-* do backups of your latest _good_ branch
+* do backups of your latest _good_ branch in advance
 
 ---
 
@@ -802,7 +802,7 @@ Therefore, __never__ `push --force` already pushed branches (modified afterwards
 If you feel the urge to upload your _drafty_ changes to the server (for safety, review, experimental sharing), and you know these will be heavily modified / tuned __afterwards__, try one of these:
 
 * create a branch with a clearly _drafty_ name (i.e. _joeJunk_)
-* if using github, create a draft PR and clearly state in the description that it is experimental (use at your own risk)
+* if using github, create a draft PR and clearly state in the description that it is experimental (_use at your own risk_)
 * publish the branch in an unofficial / private mirror
 
 ---
@@ -977,7 +977,7 @@ git is not github / github is not git
 
 github is a cloud service with fancy collaboration features like the famous _pull request_, which is a merge with a review + approve process.
 
-From the point of view of your local repo, in github you simply store a remote repo.
+From the point of view of your local repo, in github is simply a remote repo.
 
 Note: this is not a github configuration course: keys, permissions, etc.
 
@@ -987,7 +987,7 @@ Note: this is not a github configuration course: keys, permissions, etc.
 
 You don't need github (or similar) to use git and __share your work__. You can have your own remotes, or your colleagues can let you use them.
 
-Just setup a shared remote mirror (`git clone --mirror`) with a generic linux user.
+Just set up a shared remote mirror (`git clone --mirror`) with a generic linux user (`git`?).
 
 Faster, no network downtime, etc (if located in the local network). But no fancy features.
 
@@ -1002,7 +1002,7 @@ Most common operations with remotes:
 * `push` : publish changes (to colleagues or publicly)
 * `pull` : `fetch` + __automatic__ merge/rebase
 
-tip: __don't use__ `git pull` (or at least be careful). It's dangerous, your HEAD will be modified automatically. Better do `fetch`, then `merge`/`rebase` after inspection.
+tip: __don't use__ `git pull` (or at least be careful). It's dangerous, your HEAD will be modified automatically. Better do `fetch`, then `merge`/`rebase` after visual inspection.
 
 ---
 
@@ -1093,7 +1093,7 @@ The holy war question: merge or rebase, what is best?
 
 My personal take:
 
-* if simple (few branches with nearby origin) : __MERGE__
+* if simple (few branches with nearby origin): __MERGE__
 * if reintegrating (from the mainline): __REBASE__
 * other cases? depends
 * you can always rewrite history (before _publishing_!)
