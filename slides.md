@@ -129,7 +129,7 @@ Algebraically, a node (diff / delta / patch) is defined as:
 
 # what is a patch?
 
-A patch is the substraction of 2 (text) file sets. Therefore, like files, it is composed of lines. Both _negative_ (removed) and _positive_ (added).
+A patch is the subtraction of 2 (text) file sets. Therefore, like files, it is composed of lines. Both _negative_ (removed) and _positive_ (added).
 
 ![width:980px](./images/diffPatch.png)
 
@@ -164,7 +164,7 @@ A _git branch_ is a _label_ or _reference_ that points to a commit.
 
 ---
 
-# branching without branch
+# branching without branches
 
 Branching happens as soon as a file is modified. Regardless of using git or any other VCS, or without explicitly creating branches:
 
@@ -254,14 +254,14 @@ Configure the `git lol` __git-alias__ (see & copy from `git_aliases.sh`), your f
 
 # configure the files to ignore
 
-For each one of your repos, configure the files to ignore by editting `.gitignore` at the top of your repo. It contains entries such as:
+For each one of your repos, configure the files to ignore by editing `.gitignore` at the top of your repo. It contains entries such as:
 
 * `output.html` : generated files, to be kept out of git
 * `build/output/` : build folders
 * `*.o` : typical for C/C++ if no build folder
 * `*.swp` : if you use vim
 
-In github there are convenient ready-to-use _ignore templates_, offered when a repo is created.
+In github/gitlab there are convenient ready-to-use _ignore templates_, offered when a repo is created.
 
 ---
 
@@ -293,7 +293,7 @@ Identify in a git graph (refer to previous slide with graph or to upcoming _exer
 - the parents and the children.
 - the merge commits
 
-Not using the graph log view with branches is like typing with half eye instead of 2. This feature is a bit hidden in github (_insights_ / _network_).
+Not using the graph log view with branches is like typing with half eye instead of 2. In github this feature is a bit hidden (_insights_ / _network_).
 
 ---
 
@@ -564,13 +564,13 @@ Replicate the examples in the previous section :
 
 # best practices / tips #1
 
-# the stash is your friend<!-- fit -->
+# the index is your friend<!-- fit -->
 
 ---
 
-# the stash
+# the index / staging directory
 
-The _stash_ (or _index_) are the changes that are marked (_staged_) for committing.
+The _staging directory_ (or _index_) are the changes that are marked (_staged_) for committing.
 
 This means you can _play_ with which subset of your current changes you want to commit, for a nicer and more meaningful history.
 
@@ -710,7 +710,7 @@ Allows you to do this with your commits :
 
 * reword
 * reorder
-* join
+* join (squash / fixup)
 * split / change
 
 ---
@@ -975,11 +975,11 @@ A non-centralized way of working. Each repo can be assigned a different role or 
 
 git is not github / github is not git
 
-github is a cloud service with fancy collaboration features like the famous _pull request_, which is a merge with a review + approve process.
+github is a cloud service with fancy collaboration features like the famous _pull request_ (called _merge request_ in gitlab), which is a merge with a review + approve process.
 
 From the point of view of your local repo, in github is simply a remote repo.
 
-Note: this is not a github configuration course: keys, permissions, etc.
+Note: this is NOT a _github configuration course_: keys, permissions, etc.
 
 ---
 
