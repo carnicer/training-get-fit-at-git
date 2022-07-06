@@ -129,7 +129,7 @@ Algebraically, a node (diff / delta / patch) is defined as:
 
 # what is a patch?
 
-A patch is the substraction of 2 (text) file sets. Therefore, like files, it is composed of lines. Both _negative_ (removed) and _positive_ (added).
+A patch is the subtraction of 2 (text) file sets. Therefore, like files, it is composed of lines. Both _negative_ (removed) and _positive_ (added).
 
 ![width:980px](./images/diffPatch.png)
 
